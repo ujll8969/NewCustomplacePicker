@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/border"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="2dp"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/enter_location"
+                    android:imeOptions="normal"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:paddingRight="25dp"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:background="@drawable/ic_clear"
+                    android:onClick="clear" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize ui with your recurment"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
